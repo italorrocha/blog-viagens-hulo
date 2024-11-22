@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap');
+*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/fundo_contato02.jpg);
+    background-repeat: no-repeat;
+    background-position: center,center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header {
+    height: 30vh;
+    background-position: center,center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+    
+}
+.logo{
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 500px;
+    z-index: 10; /* Para garantir que fique no topo de outros elementos */
+    
+}
+.logo img{
+    width: 145px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário para a margem superior */
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+nav a {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(129, 204, 214);
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 100ms ease-in
+}
+nav a:hover {
+    background-color: #3333;
+    color: #ffffff;
+    font-weight: 500; /*grossura do texto*/
+    border-bottom: 4px solid #04e7d8;
+}
+.Titulo h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin-top: 60%;
+    font-style: normal;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+    color: white;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(60vh - 10px); /* Para considerar o tamanho do header e footer */
+    
+}
+.fale_conosco{
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com 70% de opacidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    backdrop-filter: blur(5px); /* Aplica um leve desfoque no fundo */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores baseados no WebKit */
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um sombreamento */
+    max-width: 500px;
+    width: 100%; /* Para adaptabilidade em dispositivos menores */
+}
+.fale_conosco h2{
+    color: white;
+}
+#contatoform{
+    font-size: 1.5rem;
+    color: white;
+    width: 100%; /* Faz com que as caixas ocupem toda a largura disponível */
+    
+    
+}
+#contatoform input{
+width: 50%;
+font-size: 1rem;
+background-color: transparent;
+color: white;
+}
+#contatoform textarea{
+    width: 50%;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+#contatoform button {
+    width: 150px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+#contatoform button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+footer {
+    margin-top: 50px;
+    height: 15px;
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}

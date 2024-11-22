@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap');
+*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center,center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,0.8)), url(../assets/homepage.png); 
+}
+
+.logo{
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 500px;
+    z-index: 10; /* Para garantir que fique no topo de outros elementos */
+    
+}
+.logo img{
+    width: 145px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário para a margem superior */
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+nav a {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 100ms ease-in
+}
+
+nav a:hover {
+    background-color: #3333;
+    color: #1CD3C7;
+    font-weight: 500; /*grossura do texto*/
+    border-bottom: 4px solid #1CD3C7;   
+}
+
+.Titulo h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+    font-style: normal;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+    color: white;
+}
+.site-description {
+    text-align: center;
+    margin: 20px auto; /* Espaçamento entre header e cards */
+    max-width: 800px; /* Define uma largura máxima para o texto */
+    padding: 10px;
+    background-color: #3333; /* Fundo suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leve sombra */
+  }
+  
+  .site-description p {
+    font-size: 2em;
+    color: #000000;
+    line-height: 1.8; /* Melhora a leitura */
+  }
+.homepage {
+    display: flex; /* Torna os elementos filhos flexíveis */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    justify-content: center; /* Centraliza os itens na linha */
+    gap: 20px; /* Espaço entre os itens */
+  }
+  
+  .card {
+    background: #3333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    flex: 1 1 300px; /* Define largura mínima de 300px e flexibilidade */
+    max-width: 400px; /* Limita a largura máxima */
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card img {
+   width: 30px;
+    height: auto;
+  }
+  
+  .card h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px 15px;
+  }
+  footer {
+    height: 15px;
+    background-color:transparent;
+    color: rgb(2, 2, 2);
+    font-size: 0.9rem;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}

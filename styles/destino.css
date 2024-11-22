@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap');
+*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center,center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,0.8)), url(../assets/Montanha.png); 
+}
+.logo{
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 500px;
+    z-index: 10; /* Para garantir que fique no topo de outros elementos */
+    
+}
+.logo img{
+    width: 145px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário para a margem superior */
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+nav a {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 100ms ease-in
+}
+
+nav a:hover {
+    background-color: #3333;
+    color: #1CD3C7;
+    font-weight: 500; /*grossura do texto*/
+    border-bottom: 4px solid #1CD3C7;   
+}
+
+.Titulo h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+    font-style: normal;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+    color: white;
+}
+
+/*Corpo*/
+main {
+    padding: 0.3px;
+}
+main h2{
+    margin-top: 0.3px;
+    text-align:center;
+    font-size: 1.9rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    color: rgb(3, 30, 46);
+    /*Configurações da tela de fundo*/
+    background-image: url(../assets/Os\ melhores.png);
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center,center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+}
+.destino{
+    text-align: justify;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.destino h3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.destino p{
+    max-width: 800px; /* Define a largura máxima do conteúdo */
+    font-size: 1.4rem;
+    margin-right:auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+.destino img {
+    padding: 1rem;
+    background-color:rgb(255, 255, 255);
+    width: 65%;
+    border-radius: 10px;
+    margin-left: 21%;
+    
+}
+footer {
+    height: 15px;
+    background-color:transparent;
+    color: rgb(2, 2, 2);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}

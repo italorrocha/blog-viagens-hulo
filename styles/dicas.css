@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap');
+*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center,center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    text-align: center;
+    background-image: linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,0.8)), url(../assets/Explorar.jpg);
+}
+.logo{
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 500px;
+    z-index: 10; /* Para garantir que fique no topo de outros elementos */
+    
+}
+.logo img{
+    width: 145px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário para a margem superior */
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+nav a {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 100ms ease-in
+}
+nav a:hover {
+    background-color: #3333;
+    color: #1CD3C7;
+    font-weight: 500; /*grossura do texto*/
+    border-bottom: 4px solid #1CD3C7; 
+}
+.Titulo h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+    font-style: normal;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+    color: white;
+}
+/*Animação do avião*/
+
+
+/*Corpo de Dicas de Viagem*/
+main {
+    padding: 3px;
+    margin-bottom: 10px;
+    
+}
+.titulo02{
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center,center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url(../assets/Os\ melhores\(1\).png);
+}
+main h2{
+    /*estilo fonte h2*/
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-right: 85px;
+}
+
+/*Slide de fotos */
+.carousel-container {
+    position: relative;
+    width: 130%;
+    max-width: 1800px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #3E352C;
+    margin-top: 10px;
+}
+.slide {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    
+}
+.slide img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.slide-text {
+    margin-top: 15px;
+    font-size: 30px;
+    color: #fdfdfd;
+}
+.dot-container {
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #CAC7C3;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.active {
+    background-color: #574026;
+}
+
+footer {
+    height: 15px;
+    background-color:transparent;
+    color: rgb(2, 2, 2);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}

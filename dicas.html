@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas de Viagem - Blog de Viagem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/dicas.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/Hulo_top_section-removebg.png" alt="hulo"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="dicas.html">Dicas de Viagem</a>
+            <a href="culinaria.html">Culinária</a>
+            <a href="contatos.html">Contatos</a>
+        </nav>
+        <div class="Titulo">
+            <h1>Dicas de Viagem</h1>
+        </div>
+    </header>
+    <main>
+        <div data-aos="fade-up">
+            <div class="titulo02">
+                <h2>Dicas para tornar sua viagem inesquecível:</h2>
+            </div>
+        </div>
+        <div data-aos="fade-up">
+            <div class="carousel-container">
+                <div class="slide">
+                    <img src="assets/mapa.png" alt="Planejamento">
+                    <div class="slide-text">Planeje seu roteiro com antecedência, mas mantenha espaço para surpresas.</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/Clima.png" alt="Previsão do Tempo">
+                    <div class="slide-text">Verifique a previsão do tempo e prepare roupas adequadas.</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/Documentos.png" alt="Documentos">
+                    <div class="slide-text">Tenha sempre cópias dos seus documentos importantes.</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/Cultura.png" alt="Cultura e Costumes">
+                    <div class="slide-text">Informe-se sobre a cultura e costumes do destino.</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/Gastronomia.png" alt="Gastronomia">
+                    <div class="slide-text">Experimente a gastronomia local e interaja com os moradores.</div>
+                </div>
+            </div>
+            
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blog de Viagem. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script_dicas.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
